@@ -1,2 +1,2 @@
-# NewTabEx
-A extended Internet browser Home page and New tab page.
+# About "NewTabEx"
+A extended Browser Homepage and New tab page.
