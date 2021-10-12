@@ -28,6 +28,9 @@
     margin: 0px;
     box-sizing: border-box;
 }
+#box:focus {
+    outline: #333 solid 1px;
+}
 #button {
     font-size: 20px;
     border: none;
@@ -38,4 +41,7 @@
     transform: translate(0,-50%);
     background-color: inherit;
     margin: 0px;
+}
+#button:hover {
+    cursor: pointer;
 }

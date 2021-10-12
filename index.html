@@ -1,14 +1,13 @@
 <html>
     <head>
         <title>NewTab Ex</title>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div id="search_box">
-            <form action="https://www.google.co.jp/search" id="form">
+            <form action="https://www.google.co.jp/search" id="form" method="get">
                 <input id="box" type="text" placeholder="Googleで検索" name="q" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus spellcheck="false">
-                <input id="button" class="fas" type="submit" value="" method="get">
+                <button id="button" onclick="submit()"><img src="./google.svg"></i></button>
             </form>
         </div>
         <script src='index.js'></script>
