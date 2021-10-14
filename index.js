@@ -3,7 +3,8 @@ const urls = {
     google:{url:'https://www.google.co.jp/', search:'search?q='},
     youtube:{url:'https://www.youtube.com/', search:'results?search_query='},
     twitter:{url:'https://twitter.com/', search:'search?q='},
-    google_maps:{url:'https://www.google.co.jp/maps/', search:'search/'}
+    google_maps:{url:'https://www.google.co.jp/maps/', search:'search/'},
+    wikipedia:{url:'https://ja.wikipedia.org/', search:'wiki/'}
 }
 function search (site) {
     if (box.value == '') {
