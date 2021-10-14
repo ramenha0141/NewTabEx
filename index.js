@@ -1,10 +1,14 @@
 const box = document.getElementById('box');
 const urls = {
-    google:'https://www.google.co.jp/search?q=',
-    youtube:'https://www.youtube.com/results?search_query=',
-    twitter:'https://twitter.com/search?q=',
-    google_maps:'https://www.google.co.jp/maps/search/'
+    google:{url:'https://www.google.co.jp/', search:'search?q='},
+    youtube:{url:'https://www.youtube.com/', search:'results?search_query='},
+    twitter:{url:'https://twitter.com/', search:'search?q='},
+    google_maps:{url:'https://www.google.co.jp/maps/', search:'search/'}
 }
 function search (site) {
-    location.href = urls[site] + encodeURIComponent(box.value);
+    if (box.value == '') {
+        location.href = urls[site].url;
+    } else {
+        location.href = urls[site].url + urls[site].search + encodeURIComponent(box.value);
+    }
 }
