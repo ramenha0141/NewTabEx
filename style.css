@@ -45,6 +45,11 @@
 #submit:hover {
     cursor: pointer;
 }
+#sites {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .button {
     height: 50px;
     border: solid 1px #ddd;

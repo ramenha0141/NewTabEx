@@ -9,10 +9,12 @@
                 <input id="box" type="text" placeholder="検索ワードを入力" name="q" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus spellcheck="false">
                 <button id="submit" onclick="submit();"><img src="./img/google.svg"></i></button>
             </form>
-            <button class="button" onclick="search('google');"><img src="./img/google.svg"></button>
-            <button class="button" onclick="search('youtube');"><img src="./img/youtube.svg"></button>
-            <button class="button" onclick="search('twitter');"><img src="./img/twitter.svg"></button>
-            <button class="button" onclick="search('google_maps');"><img src="./img/google-maps.svg"></button>
+            <div id="sites">
+                <button class="button" onclick="search('google');"><img src="./img/google.svg"></button>
+                <button class="button" onclick="search('youtube');"><img src="./img/youtube.svg"></button>
+                <button class="button" onclick="search('twitter');"><img src="./img/twitter.svg"></button>
+                <button class="button" onclick="search('google_maps');"><img src="./img/google-maps.svg"></button>
+            </div>
         </div>
         <script src='index.js'></script>
     </body>
