@@ -1,6 +1,6 @@
 #search_box {
     font-size: 24px;
-    width: 60%;
+    width: 40%;
     margin: 10% auto;
     position: relative;
     padding: 0;
@@ -31,14 +31,13 @@
 
 }
 #box:focus {
-    outline: #999 solid 1px;
-    box-shadow: 0px 0px 0px #000;
+    outline: none;
 }
 #submit {
     border: none;
     padding: 10px 10px;
     position: absolute;
-    top: 22%;
+    top: 25px;
     right: 10px;
     transform: translate(0,-50%);
     background-color: inherit;
