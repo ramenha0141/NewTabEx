@@ -20,7 +20,7 @@
     height: 50px;
     border: solid 1px #ddd;
     width: 100%;
-    font-size: 14px;
+    font-size: 15px;
     background-color: inherit;
     text-align: left;
     padding: 0px 10px 0px 20px;
@@ -28,7 +28,6 @@
     margin: 0px;
     box-sizing: border-box;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
-
 }
 #box:focus {
     outline: none;
@@ -64,6 +63,5 @@
     box-shadow: none;
 }
 .button img {
-    position: relative;
     height: 30px;
 }
