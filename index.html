@@ -4,17 +4,35 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="search_box">
-            <form action="https://www.google.co.jp/search" id="form" method="get">
-                <input id="box" type="text" placeholder="検索ワードを入力" name="q" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus spellcheck="false">
-                <button id="submit" onclick="submit();"><img src="./img/google.svg"></i></button>
-            </form>
-            <div id="sites">
-                <button class="button" onclick="search('google');"><img src="./img/google.svg"></button>
-                <button class="button" onclick="search('youtube');"><img src="./img/youtube.svg"></button>
-                <button class="button" onclick="search('twitter');"><img src="./img/twitter.svg"></button>
-                <button class="button" onclick="search('google_maps');"><img src="./img/google-maps.svg"></button>
-                <button class="button" onclick="search('wikipedia');"><img src="./img/wikipedia.svg"></button>
+        <div id="search">
+            <div id="search_box">
+                <input id="box" type="text" placeholder="Type search word or type / + url" name="q" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus spellcheck="false">
+                <button id="send" onclick="submit();"><img id="send_icon"></button>
+            </div>
+            <div id="sites"></div>
+            <button id="settings_open" onclick="open_settings();"><img src="./img/settings.svg"></button>
+        </div>
+        <div id="settings">
+            <h1 id="settings_title">Settings</h1>
+            <div id="settings_background">
+                <h2>Background</h2>
+                <label>
+                    <input type="radio" name="settings_background_radio" class="settings_background_radio">
+                    Color
+                </label>
+                <input type="color" id="settings_background_color">
+                <br>
+                <label>
+                    <input type="radio" name="settings_background_radio" class="settings_background_radio">
+                    Image
+                </label>
+                <input type="text" id="settings_background_image">
+                <input type="file" id="settings_background_fileinput">
+                <br>
+            </div>
+            <div id="settings_buttons">
+                <button id="settings_cancel" onclick="close_settings();">Cancel</button>
+                <button id="settings_apply" onclick="apply_settings();">Apply</button>
             </div>
         </div>
         <script src='index.js'></script>
