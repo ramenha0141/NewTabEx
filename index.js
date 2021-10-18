@@ -101,6 +101,7 @@ function open_settings () {
 function close_settings () {
     settings_open.style.display = 'block';
     settings.className = 'fadeOutAnimation';
+    init_settings();
 }
 function apply_settings () {
     if (settings_background_radio[0].checked) {

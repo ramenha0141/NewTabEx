@@ -180,6 +180,7 @@ body {
 #settings_cancel:hover {
     color: #ccc;
     background-color: #fff;
+    cursor: pointer;
 }
 #settings_apply {
     width: 120px;
@@ -195,4 +196,5 @@ body {
 #settings_apply:hover {
     color: #129CF3;
     background-color: #fff;
+    cursor: pointer;
 }
