@@ -69,8 +69,10 @@ function init_send_icon () {
 }
 function set_background () {
     if (localStorage.background == 'color') {
+        search_page.style.backgroundImage = '';
         search_page.style.backgroundColor = localStorage.background_color;
     } else if (localStorage.background == 'image') {
+        search_page.style.backgroundColor = 'url(' + '';
         search_page.style.backgroundImage = 'url(' + localStorage.background_image + ')';
     }
 }
@@ -93,9 +95,11 @@ function init_settings () {
 }
 function open_settings () {
     settings_open.style.display = 'none';
+    settings.style.display = 'block';
     settings.className = 'fadeUpAnimation';
 }
 function close_settings () {
+    settings_open.style.display = 'block';
     settings.className = 'fadeOutAnimation';
 }
 function apply_settings () {
