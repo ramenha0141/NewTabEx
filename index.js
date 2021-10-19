@@ -3,6 +3,7 @@ const box = document.getElementById('box');
 const sites = document.getElementById('sites');
 const send_icon = document.getElementById('send_icon');
 const settings_open = document.getElementById('settings_open');
+const cover = document.getElementById('cover');
 const settings = document.getElementById('settings');
 const settings_background_radio = document.getElementsByClassName('settings_background_radio');
 const settings_background_color = document.getElementById('settings_background_color');
@@ -95,12 +96,16 @@ function init_settings () {
 }
 function open_settings () {
     settings_open.style.display = 'none';
+    cover.className = 'fadeInAnimation';
+    cover.style.pointerEvents = 'all';
     settings.style.display = 'block';
     settings.className = 'fadeUpAnimation';
 }
 function close_settings () {
     settings_open.style.display = 'block';
-    settings.className = 'fadeOutAnimation';
+    cover.className = 'fadeOutAnimation';
+    cover.style.pointerEvents = 'none';
+    settings.className = 'fadeDownAnimation';
     init_settings();
 }
 function apply_settings () {
