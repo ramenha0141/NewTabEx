@@ -13,6 +13,7 @@ const urls = {
     google:{url:'https://www.google.co.jp/', search:'search?q='},
     youtube:{url:'https://www.youtube.com/', search:'results?search_query='},
     twitter:{url:'https://twitter.com/', search:'search?q='},
+    google_translate:{url:'https://translate.google.com/', search:'?sl=auto&text='},
     google_maps:{url:'https://www.google.co.jp/maps/', search:'search/'},
     wikipedia:{url:'https://ja.wikipedia.org/', search:'wiki/'},
     default:'google',
@@ -20,6 +21,7 @@ const urls = {
         'google',
         'youtube',
         'twitter',
+        'google_translate',
         'google_maps',
         'wikipedia'
     ]
